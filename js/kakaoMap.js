@@ -1,6 +1,6 @@
 let mapContainer = document.getElementById("map"),
                     mapOption = {
-                        center: new kakao.maps.LatLng(37.5614086, 127.0384812),
+                        center: new kakao.maps.LatLng(36.349255, 127.438104),
                         level: 3
                     };
 let map = new kakao.maps.Map(mapContainer, mapOption);
@@ -13,7 +13,7 @@ let zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
 let geocoder = new kakao.maps.services.Geocoder();
-    geocoder.addressSearch("서울 성동구 왕십리광장로 17 민자역사 6F", function(result, status) {
+    geocoder.addressSearch("대전 동구 동서대로 1700 ", function(result, status) {
     if (status === kakao.maps.services.Status.OK) {
         let locPosition = new kakao.maps.LatLng(result[0].y, result[0].x);
         let marker = new kakao.maps.Marker({
@@ -21,7 +21,7 @@ let geocoder = new kakao.maps.services.Geocoder();
                                 position: locPosition
                             });
         let infoWindow = new kakao.maps.InfoWindow({
-                                content: '<div style="width:150px; text-align:center; padding:6px 0;">디노체컨벤션웨딩홀</div>'
+                                content: '<div style="width:150px; text-align:center; padding:6px 0;">씨엘드포레</div>'
                             });
         infoWindow.open(map, marker);
         map.setCenter(locPosition);

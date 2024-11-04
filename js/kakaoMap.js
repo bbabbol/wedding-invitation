@@ -21,7 +21,7 @@ let geocoder = new kakao.maps.services.Geocoder();
                                 position: locPosition
                             });
         let infoWindow = new kakao.maps.InfoWindow({
-                                content: '<div style="width:200px; text-align:center; padding:6px 0;">호텔선샤인 7층<br>씨엘드포레</div>'
+                                content: '<div style="width:300px; text-align:center; padding:6px 0;">호텔선샤인 7층 씨엘드포레</div>'
                             });
         infoWindow.open(map, marker);
         map.setCenter(locPosition);

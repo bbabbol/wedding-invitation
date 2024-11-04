@@ -13,7 +13,7 @@ const sakura = new Sakura("body");
 $(document).ready(function(){
 
     $("#wedding-main-img").fadeOut(3000, function () {
-        $(this).attr("src", "assets/img/wedding-main-illustrator.png");
+        $(this).attr("src", "assets/img/main.jpg");
         $(this).fadeIn(3000);
     });
 

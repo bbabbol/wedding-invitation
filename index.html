@@ -131,17 +131,7 @@
 				<p class="place-address text-center">디노체컨벤션웨딩홀 6F 아트홀</p>
 				<p class="place-address text-center">서울 성동구 왕십리광장로 17 민자역사 6F<br/>(성동구 행당동 168-151 6F)</p>
 				<p class="place-address text-center">Tel. 02-2200-1166</p>
-				<div id="map" style="width:500px;height:400px;"></div>
-				<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=30610da2fefb37cff8cefcc18cdf014e"></script>
-				<script>
-					var container = document.getElementById('map');
-					var options = {
-						center: new kakao.maps.LatLng(33.450701, 126.570667),
-						level: 3
-					};
-
-					var map = new kakao.maps.Map(container, options);
-				</script>	
+				<div id="map"></div>
 			</div>
 			
 			<details>
@@ -599,6 +589,7 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-		
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=30610da2fefb37cff8cefcc18cdf014e&libraries=services"></script>	
+	<script type="text/javascript" src="js/kakaoMap.js"></script>	
     </body>
 </html>

@@ -35,12 +35,12 @@ $(document).ready(function(){
     $(".current").on("click", function() {
         alert("대훈 ❤️ 윤정 예식일입니다.");
     });
-    /*
+    
     let splide = new Splide("#gallery_slider", {
         perPage: 1,
         rewind: true
     }).mount();
-	*/
+	
     $(window).scroll(function() {
       scrollEvent();
     });
@@ -147,11 +147,11 @@ let shareKakaoMessage = function() {
     Kakao.Link.sendDefault({
         objectType: "feed",
         content: {
-            title: "상원 ❤️ 인주 결혼합니다",
-            imageUrl: "https://rinjyu.github.io/wedding-card/assets/img/wedding/wedding-main-illustrator.png",
+            title: "대훈 ❤️ 윤정 결혼합니다",
+            imageUrl: "https://bbabbol.github.io/wedding-invitation/assets/img/main.jpg",
             link: {
-                mobileWebUrl: "https://rinjyu.github.io/wedding-card/wedding-card.html",
-                webUrl: "https://rinjyu.github.io/wedding-card/wedding-card.html"
+                mobileWebUrl: "https://bbabbol.github.io/wedding-invitation/index.html",
+                webUrl: "https://bbabbol.github.io/wedding-invitation/index.html"
             }
         }
     });

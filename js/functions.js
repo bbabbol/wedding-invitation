@@ -141,7 +141,7 @@ let copyText = function(copyType, text) {
     }
 }
 
-Kakao.init("2fd6ac6ad06cf611c034cce8e1a5d207");
+Kakao.init("30610da2fefb37cff8cefcc18cdf014e");
 
 let shareKakaoMessage = function() {
     Kakao.Link.sendDefault({

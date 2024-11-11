@@ -11,9 +11,9 @@ let storyTypingInterval;
 const sakura = new Sakura("body");
 
 $(document).ready(function(){
-
+	
     $("#wedding-main-img").fadeOut(3000, function () {
-        $(this).attr("src", "assets/img/main.jpg");
+        $(this).attr("src", "assets/img/main2.jpg");
         $(this).fadeIn(3000);
     });
 

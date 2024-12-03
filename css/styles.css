@@ -11225,11 +11225,11 @@ html {
   font-weight: 600;
   color: #262626;
   
-  &:first-child {
+  &:first-of-type {
     color: #ff685d;
   }
-  &:nth-child(7) {
-    color: #685d;
+  &:nth-of-type(7) {
+    color: #685dff;
   }
 }
 
@@ -11241,10 +11241,10 @@ html {
   font-weight: 600;
   color: #262626;
   
-  &:nth-child(7n+1) {
+  &:nth-of-type(7n+1) {
     color: #ff685d;
   }
-  &:nth-child(7n) {
+  &:nth-of-type(7n) {
     color: #685dff;
   }
 

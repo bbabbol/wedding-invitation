@@ -11182,16 +11182,7 @@ html {
   box-sizing: border-box;
   text-align: center;
   
-  &::before {
-    content: "";
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(to top, rgba(#000, 0.25), rgba(#000, 0.1));
-	text-align: center;
-  }
+  
   
   h2 {
     margin: 0;
@@ -11209,6 +11200,17 @@ html {
   }
 }
 
+.calendar_title::before {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to top, rgba(#000, 0.25), rgba(#000, 0.1));
+  text-align: center;
+}
+
 .calendar_date {
   padding: 20px;
   display: grid;
@@ -11224,14 +11226,16 @@ html {
   height: 25px;
   font-weight: 600;
   color: #262626;
-  
-  &:first-of-type {
-    color: #ff685d;
-  }
-  &:nth-of-type(7) {
-    color: #685dff;
-  }
 }
+
+.calendar_day:first-of-type {
+  color: #ff685d;
+}
+
+.calendar_day:nth-of-type(7) {
+  color: #685dff;
+}
+
 
 .calendar_number {
   display: flex;
@@ -11240,30 +11244,32 @@ html {
   height: 25px;
   font-weight: 600;
   color: #262626;
-  
-  &:nth-of-type(7n+1) {
-    color: #ff685d;
-  }
-  &:nth-of-type(7n) {
-    color: #685dff;
-  }
-
-  &.current {
-    #background-color: #FF07b6;
-    background-image: url("../assets/img/heart.png");
-    background-size: cover;
-    background-position: center;
-
-    #color: #fff !important;
-    cursor: pointer;
-
-    .day {
-        position: absolute;
-        text-align: center;
-        color: white;
-    }
-  }
 }
+
+.calendar_number:nth-of-type(7n+1) {
+  color: #ff685d;
+}
+
+.calendar_number:nth-of-type(7n) {
+  color: #685dff;
+}
+
+.calendar_number.current {
+  #background-color: #FF07b6;
+  background-image: url("../assets/img/heart.png");
+  background-size: cover;
+  background-position: center;
+
+  #color: #fff !important;
+  cursor: pointer;
+}
+
+.calendar_number.current .day {
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
 
 .ddayText {
   margin-top: 15px;

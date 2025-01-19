@@ -11277,7 +11277,7 @@ html {
 }
 
 details {
-    display: flex;
+
     
     border-radius: 5px;
     overflow: hidden;
@@ -11308,7 +11308,7 @@ details {
     summary,p {
       position:relative;
       display:flex;
-      flex-direction:row;
+
       align-content: center;
       justify-content: flex-start;
       font-style: normal;

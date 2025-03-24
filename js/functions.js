@@ -206,7 +206,7 @@ let callNavi = function(app, name, lat, lng) {
     } else if (app === "kakao") {
         location.href="https://map.kakao.com/link/to/"+name+","+lat+","+lng;
     } else {
-        location.href="https://apis.openapi.sk.com/tmap/app/routes?appKey=D1vs0fTbwoai70cmd6VX96ujdzi92oovaVASiyNc&name="+name+"&lon="+lng+"&lat="+lat;
+        location.href="https://apis.openapi.sk.com/tmap/app/routes?appKey=nLOyXb9H9m4g8yT8eaJYc2LggygCyqQp6TI2nr89&name="+name+"&lon="+lng+"&lat="+lat;
     }
 }
 
@@ -221,7 +221,11 @@ let contact = function(target, method) {
         location.href=method + ":01000000000";
     } else if (target === "groom") {
         location.href=method + ":01000000000";
-    } else {
-        location.href=method + ":01000000000";
+    } else if (target === "wedding") {
+        location.href=method + ":0426206524";
     }
+    else {
+       location.href=method + ":01000000000";
+    }
+
 }

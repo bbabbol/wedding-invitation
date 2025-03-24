@@ -284,7 +284,7 @@
 		<section class="page-section location animatable" id="location">
 			<div class="container">
 				<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">오시는 길</h2>
-				
+
 				<div class="divider-custom">
 					<div class="divider-custom-line"></div>
 					<div class="divider-custom-icon"><i class="fas fa-heart"></i></div>
@@ -293,30 +293,26 @@
 				<!--
 				<div class="divider-custom">
 					<div class="divider-custom-line"></div>
-				</div> 
+				</div>
 				!-->
 				<div style="margin: auto; padding: 15px; font-size: 1.5rem;">
 					<p class="place-address text-center"><strong>씨엘드포레</strong></p>
 					<p class="place-address text-center">대전광역시 동구 동서대로 1700<br>호텔선샤인 7층</p>
 					<p class="place-address text-center">Tel. 042-620-6524</p>
 					<p class="place-address text-center">대전복합터미널 도보 10분 <br>무료 주차 1000대</p>
+					<div class="location_button_box">
+						<a href="https://m.map.naver.com/map.naver?lat=36.349255&amp;lng=127.438104&amp;dlevel=20&amp;mapMode=&amp;pinTitle=씨엘드포레&amp;boundary=&amp;traffic=" class="map_btn" target="_blank" data-lat="36.349255" data-lng="127.438104" data-name="씨엘드포레">지도</a>
+						<a href="tel:042-620-6524" class="call_btn">전화</a>
+					</div>
+					<!--<span style="flex: 1" onclick="contact('wedding', 'tel');"><img class="img-fluid" src="assets/img/sms.png" style="margin-left:10px; width:23px; height:28px;"/></span>-->
+
+
 					<div id="map"></div>
 				</div>
 				<div class="nav">
-					<ul>
-                        <li>
-                            <!--<a href="javascript:TMAP.send('서울 종로구 중학동 19', 126.9792937, 37.5747614);"><img src="https://static.barunsoncard.com/barunsonmcard/invitation/icon/tmap.png" /> 티맵</a>-->
-							<a href="nmap://route/car?dname=대전 동구 동서대로 1700&dlat=36.349255&dlng=127.438104"><img src="assets/img/t-map.png" />티맵</a>
-                        </li>
-                        <li>
-                            <!--<a href="javascript:startNavigation('서울 종로구 중학동 19', 126.9792937, 37.5747614)"><img src="https://static.barunsoncard.com/barunsonmcard/invitation/icon/kakaonav.png" /> 카카오내비</a> -->
-							<a href="nmap://route/car?dname=씨엘드포레&dlat=36.349255&dlng=127.438104"><img src="assets/img/naver-map.png" />네이버지도</a>
-                        </li>
-                        <li>
-                            <a href="https://map.kakao.com/link/to/씨엘드포레,36.349255,127.438104"><img src="assets/img/kakao-map.png" />카카오멥</a>
-
-                        </li>
-                    </ul>
+					<span style="flex: 1" onclick="callNavi('tmap', '씨엘드포레, 36.349255,127.438104');"><img src="assets/img/t-map.png" />티맵</span>
+					<span style="flex: 1" onclick="callNavi('naver', '씨엘드포레, 36.349255,127.438104');"><img src="assets/img/naver-map.png" />네이버지도</span>
+					<span style="flex: 1" onclick="callNavi('kakao', '씨엘드포레, 36.349255,127.438104');"><img src="assets/img/kakao-map.png" />카카오맵</span>
 				</div>
 
 			</div>

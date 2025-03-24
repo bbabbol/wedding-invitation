@@ -5,7 +5,7 @@ let mapContainer = document.getElementById("map"),
                     };
 let map = new kakao.maps.Map(mapContainer, mapOption);
 mapContainer.style.width = "100%";
-mapContainer.style.height = "350px";
+mapContainer.style.height = "250px";
 mapContainer.style.overflow = "hidden";
 map.relayout();
 map.setDraggable(false);

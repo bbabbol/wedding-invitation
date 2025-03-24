@@ -11039,10 +11039,10 @@ letter-spacing:-0.4px;
 
 }
 .location .location_button_box .map_btn {
-    background:url(https://static.barunsoncard.com/barunsonmcard/invitation/icon/ico_16_map.svg) no-repeat 18px 11px;
+    background:url("../assets/img/map.svg") no-repeat 18px 11px;
 }
 .location .location_button_box .call_btn {
-    background:url(https://static.barunsoncard.com/barunsonmcard/invitation/icon/ico_16_call.svg) no-repeat 18px 11px;
+    background:url("../assets/img/phone.svg") no-repeat 18px 11px;
 }
 
 .location .location_info {

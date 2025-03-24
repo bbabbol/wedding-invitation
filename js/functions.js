@@ -203,7 +203,7 @@ let showImage = function(index) {
 let callNavi = function(app, name, lat, lng) {
     if (app === "naver") {
         //location.href="http://app.map.naver.com/launchApp/?version=11&menu=navigation&elat="+lat+"&elng="+lng+"&etitle="+name;
-        location.href="nmap://route/car?dlat=37.5209436&dlng=127.1230074&dname=%EC%98%AC%EB%A6%BC%ED%94%BD%EA%B3%B5%EC%9B%90&appname=bbabbol.github.io";
+        location.href="nmap://route/car?dlat=36.349255&dlng=127.438104&dname=%EC%94%A8%EC%97%98%EB%93%9C%ED%8F%AC%EB%A0%88&appname=bbabbol.github.io";
     } else if (app === "kakao") {
         location.href="https://map.kakao.com/link/to/"+name+","+lat+","+lng;
     } else {

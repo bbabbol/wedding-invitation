@@ -8,6 +8,7 @@ mapContainer.style.width = "100%";
 mapContainer.style.height = "350px";
 mapContainer.style.overflow = "hidden";
 map.relayout();
+map.setDraggable(false);
 
 let zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);

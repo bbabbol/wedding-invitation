@@ -4,16 +4,16 @@ var marker = {
 };
 
 var mapContainer  = document.getElementById("staticMap"),
-                    MapOption = {
-                        center: new kakao.maps.LatLng(36.349255, 127.438104),
-                        level: 3,
-                        marker: marker
-                    };
+    MapOption = {
+        center: new kakao.maps.LatLng(36.349255, 127.438104),
+        level: 3,
+        marker: marker
+    };
 
-mapContainer.style.width = "100%";
-mapContainer.style.height = "250px";
-mapContainer.style.overflow = "hidden";
-var map = new kakao.maps.StaticMap(MapContainer, MapOption);
+//mapContainer.style.width = "100%";
+//mapContainer.style.height = "250px";
+//mapContainer.style.overflow = "hidden";
+var staticMap = new kakao.maps.StaticMap(MapContainer, MapOption);
 
 //let mapContainer = document.getElementById("map"),
 //                    mapOption = {

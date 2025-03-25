@@ -6,7 +6,7 @@ var marker = {
 var mapContainer  = document.getElementById("staticMap"),
     mapOption = {
         center: new kakao.maps.LatLng(36.349255, 127.438104),
-        level: 2,
+        level: 4,
         marker: marker
     };
 

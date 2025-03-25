@@ -1,12 +1,12 @@
-let mapContainer = document.getElementById("map"),
+let mapContainer = document.getElementById("staticMap"),
                     mapOption = {
                         center: new kakao.maps.LatLng(36.349255, 127.438104),
                         level: 3
                     };
-let map = new kakao.maps.Map(mapContainer, mapOption);
+let map = new kakao.maps.StaticMap(mapContainer, mapOption);
 mapContainer.style.width = "100%";
 mapContainer.style.height = "250px";
-mapContainer.style.overflow = "hidden";
+    mapContainer.style.overflow = "hidden";
 map.relayout();
 map.setDraggable(false);
 

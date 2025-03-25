@@ -6,12 +6,12 @@ let mapContainer = document.getElementById("staticMap"),
 let map = new kakao.maps.StaticMap(mapContainer, mapOption);
 mapContainer.style.width = "100%";
 mapContainer.style.height = "250px";
-    mapContainer.style.overflow = "hidden";
+mapContainer.style.overflow = "hidden";
 map.relayout();
-map.setDraggable(false);
+//map.setDraggable(false);
 
-let zoomControl = new kakao.maps.ZoomControl();
-map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+//let zoomControl = new kakao.maps.ZoomControl();
+//map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
 let geocoder = new kakao.maps.services.Geocoder();
     geocoder.addressSearch("대전 동구 동서대로 1700", function(result, status) {

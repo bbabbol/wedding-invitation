@@ -4,7 +4,7 @@ var marker = {
 };
 
 var mapContainer  = document.getElementById("staticMap"),
-    MapOption = {
+    mapOption = {
         center: new kakao.maps.LatLng(36.349255, 127.438104),
         level: 3,
         marker: marker
@@ -13,7 +13,7 @@ var mapContainer  = document.getElementById("staticMap"),
 //mapContainer.style.width = "100%";
 //mapContainer.style.height = "250px";
 //mapContainer.style.overflow = "hidden";
-var staticMap = new kakao.maps.StaticMap(MapContainer, MapOption);
+var staticMap = new kakao.maps.StaticMap(mapContainer, mapOption);
 
 //let mapContainer = document.getElementById("map"),
 //                    mapOption = {

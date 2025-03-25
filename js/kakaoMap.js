@@ -3,7 +3,7 @@ var marker = {
     text: '호텔선샤인 7층 씨엘드포레'
 };
 
-let MapContainer  = document.getElementById("staticMap"),
+var mapContainer  = document.getElementById("staticMap"),
                     MapOption = {
                         center: new kakao.maps.LatLng(36.349255, 127.438104),
                         level: 3,
@@ -13,7 +13,7 @@ let MapContainer  = document.getElementById("staticMap"),
 mapContainer.style.width = "100%";
 mapContainer.style.height = "250px";
 mapContainer.style.overflow = "hidden";
-let map = new kakao.maps.StaticMap(MapContainer, MapOption);
+var map = new kakao.maps.StaticMap(MapContainer, MapOption);
 
 //let mapContainer = document.getElementById("map"),
 //                    mapOption = {
